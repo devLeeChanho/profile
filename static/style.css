@@ -1,12 +1,90 @@
-@font-face{
-  font-family: 'Noto Sans';
-  src:url('./fonts/NotoSans-Regular.eot');
-  src:url('./fonts/NotoSans-Regular.eot?#iefix') format(‘embedded-opentype’), 
-      url('./fonts/NotoSans-Regular.woff') format(‘woff’), 
-      url('./fonts/NotoSans-Regular.otf') format('opentype');
+@font-face{ 
+  font-family:"NanumBarunGothic"; 
+  src:url('fonts/NanumBarunGothic.eot'); 
+  src:url('fonts/NanumBarunGothic.eot?#iefix') format('embedded-opentype'), 
+  url('fonts/NanumBarunGothic.woff') format('woff'), 
+  url('fonts/NanumBarunGothic.ttf') format('truetype'); 
+  src:local(※), url('fonts/NanumBarunGothic.woff') format('woff'); 
 }
 
-html, body{ width: 100%;}
-.temp-head{
-  font-family: "Noto Sans", "필기체";
+html, body{ 
+  width: 100%;
+  height: 100%;
+  font-family: NanumBarunGothic, sans-serif;
+  font-size: 16px;
+}
+
+/*
+* AppLoading vue
+*/
+.loading{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+.loading .loading-container{
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  max-width: 400px;
+  max-height: 400px;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -45%);
+  -webkit-transform: translate(-50%, -45%);
+  -moz-transform: translate(-50%, -45%);
+  -ms-transform: translate(-50%, -45%);
+  -o-transform: translate(-50%, -45%);
+  text-align: center;
+}
+.loading .loading-container > img{
+  position: relative;
+  width: 40%;
+  animation: vueAnimation 2.5s infinite;
+  -webkit-animation: vueAnimation 2.5s infinite;
+}
+@keyframes vueAnimation{
+  from {
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+  }
+}
+.loading .loading-notice{
+  font-size: 1.1rem;
+}
+.loading .user-info{
+  color: rgb(34, 34, 255);
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+.loading .browser-check, .loading .resulution-check{
+  display: inline-block;
+  margin: 0 5px;
+}
+.loading .browser-check > i, .loading .resulution-check > i{
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  background-color: red;
+  margin-left: 2px;
+  transition: background-color 2s;
+  -webkit-transition: background-color 2s;
+  -moz-transition: background-color 2s;
+  -ms-transition: background-color 2s;
+  -o-transition: background-color 2s;
+  vertical-align: text-top;
+}
+i.support{
+  background-color: #41B883 !important;  
 }
