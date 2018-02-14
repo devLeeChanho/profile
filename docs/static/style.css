@@ -1,0 +1,12 @@
+@font-face{
+  font-family: 'Noto Sans';
+  src:url('./fonts/NotoSans-Regular.eot');
+  src:url('./fonts/NotoSans-Regular.eot?#iefix') format(‘embedded-opentype’), 
+      url('./fonts/NotoSans-Regular.woff') format(‘woff’), 
+      url('./fonts/NotoSans-Regular.otf') format('opentype');
+}
+
+html, body{ width: 100%;}
+.temp-head{
+  font-family: "Noto Sans", "필기체";
+}
