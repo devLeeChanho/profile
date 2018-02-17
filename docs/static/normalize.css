@@ -58,6 +58,12 @@ pre {
    font-size: 1em; /* 2 */
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* Text-level semantics
 ========================================================================== */
 
