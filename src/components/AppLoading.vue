@@ -1,5 +1,5 @@
 <template>
-  <div class="loading">
+  <section class="loading">
     <div class="loading-container">
       <img src="../assets/logo.png" alert="뷰 로고">
       <p class="loading-notice"> 
@@ -17,7 +17,7 @@
         </span>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -46,7 +46,7 @@ export default {
       //  IE 9버전 이하를 제외한 나머지 브라우저 버전 지원
       if(app === "Internet Explorer"){
         if(version <= 9){
-          console.log("IE 9이하 버전")
+          console.log("IE 9이하 버전");
           this.browserSupport = false;
         }
       }

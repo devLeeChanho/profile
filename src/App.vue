@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <app-loading></app-loading>
+  <div id="app" class="app">
+    <app-loading v-if="loadingState"></app-loading>
     <global-nav></global-nav>
     <app-main></app-main>
     <profile-section></profile-section>
@@ -31,12 +31,18 @@ export default {
     "project-employee": ProjectEmployee
   },
   created() {
-    // 브라우저 크기 최대화 메소드
-    this.browserMaximize();
+    this.onChangeLoadingState();
+  },
+  data() {
+    return {
+      loadingState: true 
+    }
   },
   methods: {
-    browserMaximize(){
-      
+    onChangeLoadingState() {
+      setTimeout(() => {
+        this.loadingState = false;
+      }, 300);
     }
   }
 }
