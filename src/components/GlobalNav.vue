@@ -9,9 +9,9 @@
         </ul>
       </div>
       <ul class="right-gnb">
-        <a href="mailto:devho813@gmail.com"><li><img src="../assets/email_icon.png" alt="이메일 아이콘"></li></a>
-        <a href="http://devleechanho.tistory.com" target="_blank"><li><img src="../assets/blog_icon.png" alt="블로그 아이콘"></li></a>
-        <a href="https://github.com/devLeeChanho" target="_blank"><li><img src="../assets/github_icon.png" alt="깃허브 아이콘"></li></a>
+        <a href="mailto:devho813@gmail.com"><li><img src="../assets/icon_email.png" alt="이메일 아이콘"></li></a>
+        <a href="http://devleechanho.tistory.com" target="_blank"><li><img src="../assets/icon_blog.png" alt="블로그 아이콘"></li></a>
+        <a href="https://github.com/devLeeChanho" target="_blank"><li><img src="../assets/icon_github.png" alt="깃허브 아이콘"></li></a>
       </ul>
     </div>
   </nav>

@@ -163,7 +163,7 @@ i.support{
 }
 .gnb-container .right-gnb li{
   display: inline-block;
-  margin: 0 4px;
+  margin: 0 5px;
 }
 .gnb-container .right-gnb li img{
   width: 30px;
@@ -313,6 +313,7 @@ i.support{
 .profile{
   position: relative;
   width: 100%;
+  background-image: url(../src/assets/img_vue_aswesome.png) no-repeat;
 }
 .profile .profile-container{
   position: relative;
@@ -323,18 +324,40 @@ i.support{
 .profile .profile-container > h2 {
   position: relative;
   float: left;
-  width: 20%;
+  width: 19%;
   background-color: #FD4788;
-  padding: 10% 0% 4% 3%;
+  padding: 11% 0% 5% 3%;
+  margin: 0;
 }
 .profile .profile-container > h2 > span {
   color: white;
   font-size: 2rem;
   font-weight: normal;
 }
-.profile .profile-container > .profile-content {
+.profile .profile-container .profile-content {
   position: relative;
   float: left;
-  width: 77%; /* profile h2의 width + padding 값을 100%에서 뺀 값  */
+  width: 78%; /* profile h2의 width + padding 값을 100%에서 뺀 값  */
   background-color: white;
+  margin-top: 9%;
+}
+.profile .profile-container .profile-content ul{
+  padding: 5% 0% 5% 5%;
+}
+.profile .profile-container .profile-content ul li{
+  position: relative;
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+}
+.profile .profile-container .profile-content ul li > h3{
+  margin-bottom: -3px;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+.profile .profile-container .profile-content ul li > p{
+  line-height: 1.3rem;
+  color: #646464;
+  font-weight: 100;
+  font-size: 0.85rem;
 }
