@@ -9,9 +9,9 @@
         </h2>
       </div>
       <div class="main-right">
-        <img class="lamp" src="../assets/image_lamp.png" alt="전등">
-        <img class="starbucks" src="../assets/image_starbucks.png" alt="스타벅스 커피">
-        <img class="macbook" src="../assets/image_macbook.png" alt="맥북 이미지">
+        <img class="lamp" src="static/assets/image/image_lamp.png" alt="전등">
+        <img class="starbucks" src="static/assets/image/image_starbucks.png" alt="스타벅스 커피">
+        <img class="macbook" src="static/assets/image/image_macbook.png" alt="맥북 이미지">
       </div>
       <div class="indicator-container">
         <div class="indicator-arrow top">

@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Vue.js",
+    "star": "★★★★☆",
+    "countProjects": 2,
+    "imgUrl": "static/assets/image/skill_vuejs.png"
+  },
+  {
+    "title": "jQuery",
+    "star": "★★★★★",
+    "countProjects": 7,
+    "imgUrl": "static/assets/image/skill_jquery.png"
+  },
+  {
+    "title": "CSS",
+    "star": "★★★★★",
+    "countProjects": 9,
+    "imgUrl": "static/assets/image/skill_css3.png"
+  },
+  {
+    "title": "HTML",
+    "star": "★★★★★",
+    "countProjects": 10,
+    "imgUrl": "static/assets/image/skill_html5.png"
+  },
+  {
+    "title": "MySQL",
+    "star": "★★☆☆☆",
+    "countProjects": 4,
+    "imgUrl": "static/assets/image/skill_mysql.png"
+  },
+  {
+    "title": "Node.js",
+    "star": "★★★☆☆",
+    "countProjects": 1,
+    "imgUrl": "static/assets/image/skill_nodejs.png"
+  },
+  {
+    "title": "JavaScript",
+    "star": "★★★★☆",
+    "countProjects": 9,
+    "imgUrl": "static/assets/image/skill_javascript.png"
+  },
+  {
+    "title": "Java",
+    "star": "★★★☆☆",
+    "countProjects": 4,
+    "imgUrl": "static/assets/image/skill_java.png"
+  },
+  {
+    "title": "Android",
+    "star": "★★★☆☆",
+    "countProjects": 3,
+    "imgUrl": "static/assets/image/skill_android.png"
+  },
+  {
+    "title": "React",
+    "star": "★★★☆☆",
+    "countProjects": 1,
+    "imgUrl": "static/assets/image/skill_react.png"
+  }
+]

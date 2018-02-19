@@ -1,7 +1,7 @@
 <template>
   <section class="loading">
     <div class="loading-container">
-      <img src="../assets/logo.png" alert="뷰 로고">
+      <img src="static/assets/image/logo.png" alert="뷰 로고">
       <p class="loading-notice"> 
         조금만 기다려주세요.<br>
         Please wait a minute.

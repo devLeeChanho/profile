@@ -8,19 +8,19 @@
         <ul>
           <li>
             <h3>Name</h3>
-            <p>Chanho Lee (이찬호)</p>
+            <p>Chanho Lee (이찬호) 李澯昊</p>
           </li>
           <li>
-            <h3>birth</h3>
+            <h3>Birth</h3>
             <p>13th August 1993 (26세)</p>
           </li>
           <li>
-            <h3>address</h3>
+            <h3>Address</h3>
             <p>Meokgol, Korea (서울시 중랑구 묵1동)</p>
           </li>
           <li>
-            <h3>level of education</h3>
-            <p>Korea National University of Transportation <br>(한국교통대학교 컴퓨터정보기술공학부 소프트웨어전공 졸업)</p>
+            <h3>Level of education</h3>
+            <p>한국교통대학교 컴퓨터정보기술공학부 <br> 소프트웨어전공 졸업</p>
           </li>
           <li>
             <h3>Certificate</h3>
@@ -31,6 +31,11 @@
             </p>
           </li>
         </ul>
+      </div>
+      <div class="profile-aside">
+        <img class="identification-picture" src="static/assets/image/identification_picture.jpg" alt="이력서 사진">
+        <!-- 테스트 이미지 나중에 학위증 대체 -->        
+        <img class="certificate-image" src="static/assets/image/test.jpg" alt="">
       </div>
       <div style="clear: both;"></div>
     </div>

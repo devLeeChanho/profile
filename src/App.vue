@@ -30,9 +30,6 @@ export default {
     "project-student": ProjectStudent,
     "project-employee": ProjectEmployee
   },
-  created() {
-    this.onChangeLoadingState();
-  },
   data() {
     return {
       loadingState: true 
@@ -44,6 +41,9 @@ export default {
         this.loadingState = false;
       }, 300);
     }
+  },
+  created() {
+    this.onChangeLoadingState();
   }
 }
 </script>
