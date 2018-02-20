@@ -35,7 +35,7 @@
       <div class="profile-aside">
         <img class="identification-picture" src="static/assets/image/identification_picture.jpg" alt="이력서 사진">
         <!-- 테스트 이미지 나중에 학위증 대체 -->        
-        <img class="certificate-image" src="static/assets/image/test.jpg" alt="">
+        <img class="contest-image" src="static/assets/image/photo_mobile_contest.jpg" alt="공모전 사진">
       </div>
       <div style="clear: both;"></div>
     </div>

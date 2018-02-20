@@ -316,7 +316,7 @@ i.support{
   width: 100%;
   background-image: url(assets/image/img_vue_aswesome.png);
   background-repeat: no-repeat;
-  background-position: 99% 80%;
+  background-position: 100% 80%;
   background-size: 13%;
 }
 .profile .profile-container{
@@ -346,7 +346,8 @@ i.support{
   bottom: 0;
 }
 .profile-aside > img{
-  box-shadow: 0 0 3px black;
+  -webkit-box-shadow: -2px 2px 3px black;
+  box-shadow: -2px 2px 3px black;
 }
 .profile-aside .identification-picture{
   position: absolute;
@@ -354,11 +355,13 @@ i.support{
   right: 0;
   top: 0;
 }
-.profile-aside .certificate-image{
+.profile-aside .contest-image{
   position: absolute;
-  width: 45%;
+  width: 70%;
   left: 5%;
   bottom: 5%;
+  -webkit-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
   transform: rotate(-10deg);
 }
 
@@ -376,7 +379,7 @@ i.support{
   position: relative;
   display: inline-block;
   width: 49%;
-  vertical-align: top;
+  vertical-align: middle;
 }
 .profile .profile-container .profile-content ul li > h3{
   margin-bottom: -3px;
@@ -411,7 +414,7 @@ i.support{
   width: 19%;
   background-color: #FED102;
   padding: 11% 0% 5% 3%;
-  margin: 0;
+  margin: 0 0 -2px 0;
 }
 .skillset .skillset-container > h2 > span {
   color: white;
@@ -461,6 +464,7 @@ i.support{
 .project{
   position: relative;
   width: 100%;
+  margin-bottom: 150px;
 }
 .project .project-container{
   position: relative;
@@ -482,19 +486,13 @@ i.support{
   font-weight: normal;
 }
 .project-container .project-content{
-  width: 78%;
-  margin: -40px 0 0 19%;
-}
-/* Tabbed Styles */
-.tabbed {
-  width: 80%;
-  min-width: 400px;
-  margin: 0 auto;
-  margin-bottom: 68px;
-  overflow: hidden;
+  width: 78.5%;
+  margin: -35.9px 0 0 22%;
+  -webkit-transition: border 250ms ease;
+  -o-transition: border 250ms ease;
   transition: border 250ms ease;
 }
-.tabbed ul {
+.project-content-tap {
   margin: 0px;
   padding: 0px;
   overflow: hidden;
@@ -502,11 +500,11 @@ i.support{
   padding-left: 48px;
   list-style-type: none;
 }
-.tabbed ul * {
+.project-content-tap * {
   margin: 0px;
   padding: 0px;
 }
-.tabbed ul li {
+.project-content-tap li {
   display: block;
   float: right;
   padding: 10px 24px 8px;
@@ -518,10 +516,14 @@ i.support{
   color: #777;
   font: 600 13px/20px roboto, "Open Sans", Helvetica, sans-serif;
   
+  -webkit-transition: all 250ms ease;
+  
+  -o-transition: all 250ms ease;
+  
   transition: all 250ms ease;
 }
-.tabbed ul li:before,
-.tabbed ul li:after {
+.project-content-tap li:before,
+.project-content-tap li:after {
   display: block;
   content: " ";
   position: absolute;
@@ -529,70 +531,203 @@ i.support{
   height: 100%;
   width: 44px; 	
   background-color: #FFF;
+  -webkit-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
   transition: all 250ms ease;
 }
-.tabbed ul li:before {
+.project-content-tap li:before {
   right: -24px;
+  -webkit-transform: skew(30deg, 0deg);
+  -ms-transform: skew(30deg, 0deg);
   transform: skew(30deg, 0deg);
+  -webkit-box-shadow: rgba(0,0,0,.1) 3px 2px 5px, inset rgba(255,255,255,.09) -1px 0;
   box-shadow: rgba(0,0,0,.1) 3px 2px 5px, inset rgba(255,255,255,.09) -1px 0;
 }
-.tabbed ul li:after {
+.project-content-tap li:after {
   left: -24px;
+  -webkit-transform: skew(-30deg, 0deg);
+  -ms-transform: skew(-30deg, 0deg);
   transform: skew(-30deg, 0deg);
+  -webkit-box-shadow: rgba(0,0,0,.1) -3px 2px 5px, inset rgba(255,255,255,.09) 1px 0;
   box-shadow: rgba(0,0,0,.1) -3px 2px 5px, inset rgba(255,255,255,.09) 1px 0;
 }
-.tabbed ul li:hover,
-.tabbed ul li:hover:before,
-.tabbed ul li:hover:after {
+.project-content-tap li:hover,
+.project-content-tap li:hover:before,
+.project-content-tap li:hover:after {
   background-color: #F4F7F9;
-  color: #444;
 }
-.tabbed ul li.active {
+.project-content-tap li.active {
   z-index: 3;
 }
-.tabbed ul li.active,
-.tabbed ul li.active:before,
-.tabbed ul li.active:after {
-  background-color: #000;
+.project-content-tap li.active,
+.project-content-tap li.active:before,
+.project-content-tap li.active:after {
   color: #fff;
 }
 
 /* Round Tabs */
-.tabbed.round ul li {
+.project-content-tap li {
   border-radius: 8px 8px 0 0;
 }
-.tabbed.round ul li:before {
+.project-content-tap li:before {
   border-radius: 0 8px 0 0;
 }
-.tabbed.round ul li:after {
+.project-content-tap li:after {
   border-radius: 8px 0 0 0;
 }
 
 /* Skins */
-.tabbed[class*="skin-"] ul li {
+.project-content-tap li {
   color: #FFF;
   text-shadow: rgba(0,0,0,.1) 0 1px;
 }
-.tabbed.skin-turquoise ul li,
-.tabbed.skin-turquoise ul li:before,
-.tabbed.skin-turquoise ul li:after {
+.project-content-tap li,
+.project-content-tap li:before,
+.project-content-tap li:after {
   background-color: #8ABA74;
 }
-.tabbed.skin-turquoise ul li:hover,
-.tabbed.skin-turquoise ul li:hover:before,
-.tabbed.skin-turquoise ul li:hover:after {
+.project-content-tap li:hover,
+.project-content-tap li:hover:before,
+.project-content-tap li:hover:after {
   background-color: #83DA5B;
 }
-.tabbed.skin-turquoise ul li.active,
-.tabbed.skin-turquoise ul li.active:before,
-.tabbed.skin-turquoise ul li.active:after {
+.project-content-tap li.active,
+.project-content-tap li.active:before,
+.project-content-tap li.active:after {
   background-color: #83DA5B;
 }
-
-.project-content .project-detail{
+.project-content .project-detail-wrap{
   position: relative;
   width: 97%;
-  padding: 1%;
+  padding: 2% 0 5% 2%;
   border: 2px solid #89B973;
   background-color: #FFFFFF; 
+}
+.project-detail-wrap .project-detail{
+  position: relative;
+  width: 70%;
+}
+.project-detail-wrap .project-detail .detail-os{
+  position: relative;
+  width: 100%;
+}
+.detail-os img{
+  display: inline-block;
+  margin: 0 1px;
+  width: 30px;
+}
+.project-detail-wrap .project-detail .detail-title{
+  font-size: 1.8rem;
+  margin: 15px 0;
+  color: #485D83;
+}
+.project-detail-wrap .project-detail .detail-year{
+  font-size: 0.9rem;
+}
+.project-detail-wrap .project-detail .detail-tags{
+  position: relative;
+  width: 100%;
+}
+.detail-tags li{
+  display: inline-block;
+  padding: 5px;
+  margin: 2px;
+  background-color: #83DA5B;
+  border-radius: 7px;
+  color: white;
+  font-size: 0.85rem;
+}
+.project-detail-wrap .project-detail .detail-explain{
+  font-weight: lighter;
+  font-size: 0.9rem;
+  color: #646464;  
+}
+.project-detail-wrap .project-detail .detail-role{
+  position: relative;
+  width: 100%;
+}
+.project-detail-wrap .project-detail .detail-role h4{
+  color: #485D83;  
+}
+.project-detail-wrap .project-detail .detail-role ul{
+  list-style-type: circle;
+}
+.project-detail-wrap .project-detail .detail-role ul li{
+  margin-left: 15px;
+  font-size: 0.9rem;
+  color: #646464;  
+}
+.project-detail-wrap .project-info{
+  position: absolute;
+  width: 18%;
+  right: 0;
+  top: 42px;
+  height: 50%;
+}
+.project-detail-wrap .project-info h4{
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  color: #485D83;
+}
+.project-detail-wrap .project-info span{
+  display: inline-block;
+  padding-left: 5px;
+  font-size: 0.85rem;
+  color: #646464;
+}
+.project-detail-wrap .project-preview{
+  position: relative;
+  width: 100%;
+  margin-top: 100px;
+  text-align: center;
+}
+.project-detail-wrap .project-preview .preview-video{
+  position: relative;
+  width: 100%;
+}
+.preview-video > video{
+  width: 80%;
+  -webkit-box-shadow: 0px 0 8px black;
+  box-shadow: 0px 0 8px black;
+}
+.project-detail-wrap .project-preview .preview-image-wrap{
+  position: relative;
+  width: 100%;
+}
+.preview-image-wrap > .preview-prev-arrow{
+  position: absolute;
+  left: 23%;
+  top: 45%;
+  width: 30px;
+  padding: 30px;
+  cursor: pointer;
+  -webkit-transform: translateY(-45%) rotate(180deg);
+  -ms-transform: translateY(-45%) rotate(180deg);
+  transform: translateY(-45%) rotate(180deg);
+}
+.preview-image-wrap > .preview-next-arrow{
+  position: absolute;
+  right: 23%;
+  top: 45%;
+  width: 30px;
+  padding: 30px;
+  cursor: pointer;
+  -webkit-transform: translateY(-45%);
+  -ms-transform: translateY(-45%);
+  transform: translateY(-45%);  
+}
+.preview-image-wrap .preview-image{
+  position: relative;
+  width: 30%;
+  margin: 0 auto;
+}
+.preview-image-enter-active, .preview-image-leave-active {
+  transition: opacity .5s;
+}
+.preview-image-enter, .preview-image-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+.preview-image-wrap .preview-image > img{
+  position: relative;
+  width: 100%;
 }
