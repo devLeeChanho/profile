@@ -28,6 +28,13 @@
 </template>
 <script>
 export default {
-  
+  mounted() {
+    this.mainInit();
+  },
+  methods: {
+    mainInit() {
+
+    }
+  }
 }
 </script>

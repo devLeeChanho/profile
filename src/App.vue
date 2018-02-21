@@ -1,11 +1,11 @@
 <template>
   <div id="app" class="app">
     <app-loading v-if="loadingState"></app-loading>
-    <global-nav></global-nav>
-    <app-main></app-main>
-    <profile-section></profile-section>
-    <skill-set></skill-set>
-    <project-student></project-student>
+    <global-nav v-on:@changeScroll="changeScroll"></global-nav>
+    <app-main ref="appMain"></app-main>
+    <profile-section ref="profileSection"></profile-section>
+    <skill-set ref="skillSet"></skill-set>
+    <project-student ref="projectStudent"></project-student>
     <project-employee></project-employee>
   </div>
 </template>
@@ -32,7 +32,7 @@ export default {
   },
   data() {
     return {
-      loadingState: true 
+      loadingState: true
     }
   },
   methods: {
@@ -40,6 +40,23 @@ export default {
       setTimeout(() => {
         this.loadingState = false;
       }, 300);
+    },
+    changeScroll(list) {
+      // MAIN, PROFILE, SKILLSET, PROJECTS      
+      switch (list) {
+        case "MAIN":
+          this.$refs.appMain.$el.scrollIntoView({behavior: 'smooth'});
+          break;
+        case "PROFILE":
+          this.$refs.profileSection.$el.scrollIntoView({behavior: 'smooth'});
+          break;
+        case "SKILLSET":
+          this.$refs.skillSet.$el.scrollIntoView({behavior: 'smooth'});
+          break;
+        case "PROJECTS":
+          this.$refs.projectStudent.$el.scrollIntoView({behavior: 'smooth'});
+          break;
+      }
     }
   },
   created() {
