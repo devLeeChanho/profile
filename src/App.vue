@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="app">
     <app-loading v-if="loadingState"></app-loading>
-    <global-nav v-on:@changeScroll="changeScroll"></global-nav>
+    <global-nav v-on:@onClickMenuList="onClickMenuList"></global-nav>
     <app-main ref="appMain"></app-main>
     <profile-section ref="profileSection"></profile-section>
     <skill-set ref="skillSet"></skill-set>
@@ -41,7 +41,7 @@ export default {
         this.loadingState = false;
       }, 300);
     },
-    changeScroll(list) {
+    onClickMenuList(list) {
       // MAIN, PROFILE, SKILLSET, PROJECTS      
       switch (list) {
         case "MAIN":
@@ -59,7 +59,7 @@ export default {
       }
     }
   },
-  created() {
+  created() {   
     this.onChangeLoadingState();
   }
 }

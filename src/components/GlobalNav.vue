@@ -55,7 +55,7 @@ export default {
       this.hideMenuState = !this.hideMenuState;
     },
     onClickMenuList(list) {
-      this.$emit("@changeScroll", list);
+      this.$emit("@onClickMenuList", list);
     }
   }
 }

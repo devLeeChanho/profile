@@ -25,7 +25,6 @@ html, body{
   font-family: NanumBarunGothic, sans-serif;
   font-size: 16px;
   background-color: #e6eff2;
-  /* scroll-behavior : smooth; */
 }
 
 .app{
@@ -122,6 +121,8 @@ i.support{
   width: 100%;
   z-index: 99;
   padding: 30px 0;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
   transition: all .3s;
 }
 .gnb-scroll{
@@ -173,6 +174,8 @@ i.support{
   color: white;
 }
 .gnb-hide-enter-active, .gnb-hide-leave-active {
+  -webkit-transition: opacity .3s;
+  -o-transition: opacity .3s;
   transition: opacity .3s;
 }
 .gnb-hide-enter, .gnb-hide-leave-to /* .fade-leave-active below version 2.1.8 */ {
@@ -374,7 +377,7 @@ i.support{
   font-size: 2rem;
   font-weight: normal;
 }
-.profile .profile-container .profile-aside{
+/* .profile .profile-container .profile-aside{
   position: absolute;
   width: 22%;
   height: 306px;
@@ -399,7 +402,7 @@ i.support{
   -webkit-transform: rotate(-10deg);
   -ms-transform: rotate(-10deg);
   transform: rotate(-10deg);
-}
+} */
 
 .profile .profile-container .profile-content {
   position: relative;
@@ -437,6 +440,39 @@ i.support{
 .skillset{
   position: relative;
   width: 100%;
+}
+.skillset:before{
+  content: "";
+  position: absolute;
+  left: 3%;
+  width: 11%;
+  height: 100%;
+  background-image: url(assets/image/skill_react.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  -webkit-animation: reactRotate 3s linear infinite;
+          animation: reactRotate 3s linear infinite;
+}
+@-webkit-keyframes reactRotate{
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);    
+  }
+}
+@keyframes reactRotate{
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);    
+  }
 }
 .skillset .skillset-container{
   position: relative;
@@ -772,9 +808,13 @@ i.support{
   position: absolute;
   top: 50%;  
   width: 100%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 .preview-enter-active, .preview-leave-active {
+  -webkit-transition: opacity .5s;
+  -o-transition: opacity .5s;
   transition: opacity .5s;
 }
 .preview-enter, .preview-leave-to /* .fade-leave-active below version 2.1.8 */ {
