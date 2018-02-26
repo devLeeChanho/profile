@@ -39,7 +39,8 @@ export default {
     onChangeLoadingState() {
       setTimeout(() => {
         this.loadingState = false;
-      }, 3000);
+        this.goScrollTop();
+      }, 3500);
     },
     onClickMenuList(list) {
       // MAIN, PROFILE, SKILLSET, PROJECTS      
@@ -57,6 +58,9 @@ export default {
           this.$refs.projectStudent.$el.scrollIntoView({behavior: 'smooth'});
           break;
       }
+    },
+    goScrollTop() {
+      window.scroll({top: 0});
     }
   },
   created() {   
