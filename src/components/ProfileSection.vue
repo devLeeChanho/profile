@@ -1,10 +1,10 @@
 <template>
-  <section class="profile">
+  <section class="profile" v-observe-visibility="backgroundAnimation">
     <div class="profile-container">
-      <h2>
+      <h2 v-observe-visibility="visibleAnimation">
         <span>Profile</span>
       </h2>
-      <div class="profile-content">
+      <div class="profile-content" v-observe-visibility="visibleAnimation">
         <ul>
           <li>
             <h3>NAME</h3>
@@ -43,5 +43,21 @@
 </template>
 <script>
 export default {
+  methods:{
+    // Intersection Observer API
+    backgroundAnimation(isVisible, entry) {
+      if(isVisible){
+        entry.target.setAttribute("style", "background-position: 100% 80%;");        
+      }else{
+        entry.target.setAttribute("style", "background-position: 100% 130%");        
+      }      
+    },
+    visibleAnimation(isVisible, entry) {
+      if(isVisible)
+        entry.target.setAttribute("style", "opacity:1; transform: translateY(0);");
+      else
+        entry.target.setAttribute("style", "opacity:0; transform: translateY(50%);");
+    }
+  }
 }
 </script>

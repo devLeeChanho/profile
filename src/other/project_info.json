@@ -16,7 +16,7 @@
       "플레이어 기록에 따른 업적, 캐릭터 시스템 개발 담당"
     ],
     "preview": {
-      "video": [],
+      "video": ["static/assets/video/thewaytoschool.mp4"],
       "image": [
         "static/assets/image/project_thewaytoschool0.png",
         "static/assets/image/project_thewaytoschool1.png",

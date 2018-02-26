@@ -39,7 +39,7 @@ export default {
     onChangeLoadingState() {
       setTimeout(() => {
         this.loadingState = false;
-      }, 300);
+      }, 3000);
     },
     onClickMenuList(list) {
       // MAIN, PROFILE, SKILLSET, PROJECTS      

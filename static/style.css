@@ -83,7 +83,7 @@ html, body{
 }
 .loading .loading-notice{
   font-size: 1rem;
-  color: gray;
+  color: #646464;
 }
 .loading .user-info{
   color: rgb(34, 34, 255);
@@ -245,6 +245,9 @@ i.support{
   font-family: Amatic SC, NanumBarunGothic, sans-serif;
   font-size: 3.8rem;
   font-weight: bold;
+  -webkit-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  transition: all 1.5s;
 }
 .main-container .main-right{
   position: relative;
@@ -255,6 +258,9 @@ i.support{
 }
 .main-container .main-right > img{
   position: absolute;
+  -webkit-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  transition: all 1.5s;  
 }
 .main-container .main-right .lamp{
   height: 420px;
@@ -357,12 +363,15 @@ i.support{
   background-repeat: no-repeat;
   background-position: 100% 80%;
   background-size: 13%;
+  -webkit-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  transition: all 1.5s;
 }
 .profile .profile-container{
   position: relative;
   width: 90%;  
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 1px auto 0;
 }
 .profile .profile-container > h2 {
   position: relative;
@@ -371,6 +380,9 @@ i.support{
   background-color: #FD4788;
   padding: 11% 0% 5% 3%;
   margin: 0;
+  -webkit-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  transition: all 1.5s;
 }
 .profile .profile-container > h2 > span {
   color: white;
@@ -410,6 +422,9 @@ i.support{
   width: 78%; /* profile h2의 width + padding 값을 100%에서 뺀 값  */
   background-color: white;
   margin-top: 10%;
+  -webkit-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  transition: all 1.5s;
 }
 .profile .profile-container .profile-content ul{
   padding: 5% 0% 5% 5%;
@@ -452,26 +467,26 @@ i.support{
   background-position: center;
   background-size: contain;
   -webkit-animation: reactRotate 3s linear infinite;
-          animation: reactRotate 3s linear infinite;
+  animation: reactRotate 3s linear infinite;
 }
 @-webkit-keyframes reactRotate{
   from {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);    
+    transform: rotate(360deg);    
   }
 }
 @keyframes reactRotate{
   from {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);    
+    transform: rotate(360deg);    
   }
 }
 .skillset .skillset-container{
@@ -487,6 +502,9 @@ i.support{
   background-color: #FED102;
   padding: 11% 0% 5% 3%;
   margin: 0 0 -2px 0;
+  -webkit-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  transition: all 1.5s;
 }
 .skillset .skillset-container > h2 > span {
   color: white;
@@ -504,21 +522,69 @@ i.support{
   width: 18%;
   height: 216px;
   padding-left: 2%;
+  -webkit-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  transition: all 1.5s;
 }
 .list-item-1 > .item-title{ color: #485D83; margin-bottom: 0; font-size: 1.2rem; margin: 5% 0 0 0;}
 .list-item-1 > .item-count-project{font-size: 0.8rem; font-weight: lighter; margin: 3px 0 10px; }
 .list-item-1 > .item-star{color:#0F87D8; }
 .list-item-1 > img{ width: 38%; position: absolute; right: 17%; }
+.list-item-1 > .skill-detail{
+  position: absolute; 
+  width: 100%;
+  height: 100%;
+  color: transparent;
+  background-color: rgba(0,0,0,0);
+  left: 0;
+  top: 0;
+  cursor:pointer;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.list-item-1 > .skill-detail:hover{background-color: rgba(0,0,0,0.7); color: white;}
+.list-item-1 > .skill-detail > p{
+  position: relative;
+  margin: 0;
+  padding: 3%;
+  font-size: 0.85rem;
+  text-align: left;
+}
 
 .skillset .skillset-container .skill-list > .list-item-4{
   width: 25%;
   height: 295px;
   text-align: center;
+  -webkit-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  transition: all 1.5s;  
 }
 .list-item-4 > .item-title{ color: #485D83; margin-bottom: 0; font-size: 1.2rem;}
 .list-item-4 > .item-count-project{font-size: 0.8rem; font-weight: lighter; margin: 3px 0 10px; }
 .list-item-4 > .item-star{color:#0F87D8; margin-bottom: 8%;}
 .list-item-4 > img{ width: 40%; }
+.list-item-4 > .skill-detail{
+  position: absolute; 
+  width: 100%; 
+  height: 100%; 
+  color: transparent; 
+  background-color: rgba(0,0,0,0); 
+  left: 0; 
+  top: 0; 
+  cursor:pointer;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;  
+}
+.list-item-4 > .skill-detail:hover{background-color: rgba(0,0,0,0.7); color: white;}
+.list-item-4 > .skill-detail > p{
+  position: relative;
+  margin: 0;
+  padding: 3%;
+  font-size: 0.9rem;
+  text-align: left;
+}
 
 @media screen and (max-width: 1350px){
   .skillset .skillset-container .skill-list > .list-item-1{
@@ -542,7 +608,7 @@ i.support{
   position: relative;
   margin: 0 auto;
   width: 90%;
-  max-width: 1200px;  
+  max-width: 1200px;
 }
 .project-container > h2{
   position: relative;
@@ -551,6 +617,16 @@ i.support{
   background-color: #87C66A;
   padding: 9.5% 0% 3.5% 3%;
   margin: 0;
+
+  -webkit-transition: opacity 1.5s, -webkit-transform 1.5s;
+
+  transition: opacity 1.5s, -webkit-transform 1.5s;
+
+  -o-transition: opacity 1.5s, transform 1.5s;
+
+  transition: opacity 1.5s, transform 1.5s;
+
+  transition: opacity 1.5s, transform 1.5s, -webkit-transform 1.5s
 }
 .project-container > h2 > span {
   color: white;
@@ -563,6 +639,16 @@ i.support{
   -webkit-transition: border 250ms ease;
   -o-transition: border 250ms ease;
   transition: border 250ms ease;
+
+  -webkit-transition: opacity 1.5s, -webkit-transform 1.5s;
+
+  transition: opacity 1.5s, -webkit-transform 1.5s;
+
+  -o-transition: opacity 1.5s, transform 1.5s;
+
+  transition: opacity 1.5s, transform 1.5s;
+
+  transition: opacity 1.5s, transform 1.5s, -webkit-transform 1.5s;
 }
 .project-content-tap {
   margin: 0px;

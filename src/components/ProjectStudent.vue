@@ -1,14 +1,14 @@
 <template>
   <section class="project">
-    <div class="project-container">
-      <h2>
+    <div class="project-container" v-observe-visibility="visibleAnimation">
+      <h2 v-observe-visibility="visibleAnimation">
         <span>
           Student <br>
           Project  
         </span>
       </h2>
       <div style="clear: both;"></div>
-      <div class="project-content" id="skinable">
+      <div class="project-content" id="skinable" v-observe-visibility="visibleAnimation">
         <project-tap 
           v-bind:project-info="projectInfo"
           v-on:@onClickTap="onClickTap">
@@ -79,6 +79,13 @@ import ProjectDetail from "./ProjectDetail.vue";
           tabs[i].classList.remove('active');
         }
         tab.classList.add("active");
+      },
+      // Intersection Observer API
+      visibleAnimation(isVisible, entry) {
+        if(isVisible)
+          entry.target.setAttribute("style", "opacity:1; transform: translateY(0);");
+        else
+          entry.target.setAttribute("style", "opacity:0; transform: translateY(30%);");
       }
     }
   }

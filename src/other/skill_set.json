@@ -3,60 +3,97 @@
     "title": "Vue.js",
     "star": "★★★★☆",
     "countProjects": 2,
-    "imgUrl": "static/assets/image/skill_vuejs.png"
+    "imgUrl": "static/assets/image/skill_vuejs.png",
+    "skillDescription": ["최근 가장 관심있는 프레임워크입니다. 포트폴리오 사이트를 Vue.js로 구현하였습니다."]
   },
   {
     "title": "jQuery",
     "star": "★★★★★",
     "countProjects": 7,
-    "imgUrl": "static/assets/image/skill_jquery.png"
+    "imgUrl": "static/assets/image/skill_jquery.png",
+    "skillDescription": [
+      "주로 DOM 객체를 다룰 때 사용하는 라이브러리 입니다. ajax 비동기 통신을 하거나 애니메이션, 슬라이드등 다양한 시각적인 효과를 구현할 때 사용하였습니다."
+    ]
   },
   {
     "title": "CSS",
     "star": "★★★★★",
     "countProjects": 9,
-    "imgUrl": "static/assets/image/skill_css3.png"
+    "imgUrl": "static/assets/image/skill_css3.png",
+    "skillDescription": [
+      "각 속성들을 이해하고 있으며 원하는 레이아웃을 자유롭게 구현할 수 있습니다.",
+      "미디어 쿼리를 활용하여 반응형 웹사이트 구현을 할 수 있습니다.",
+      "크로스 브라우징에 대한 이해도가 높으며 스윙, 크롬, 사파리, 파폭, 엣지, IE8+를 크로스 브라우징 해본 경험이 있습니다."
+    ]
   },
   {
     "title": "HTML",
     "star": "★★★★★",
     "countProjects": 10,
-    "imgUrl": "static/assets/image/skill_html5.png"
+    "imgUrl": "static/assets/image/skill_html5.png",
+    "skillDescription": [
+      "시멘틱 태그를 사용하여 웹 표준과 접근성을 준수하며 웹 개발을 할 수 있습니다.", 
+      "하드코딩으로 웹 개발이 가능하며 각각 태그에 대한 이해도가 높습니다.", 
+      "HTML5의 SVG와 같은 그래픽 기술에 관심이 많으며 졸업작품을 SVG 기술을 활용하여 구현하였습니다."
+    ]
   },
   {
     "title": "MySQL",
     "star": "★★☆☆☆",
     "countProjects": 4,
-    "imgUrl": "static/assets/image/skill_mysql.png"
+    "imgUrl": "static/assets/image/skill_mysql.png",
+    "skillDescription": [
+      "기본 이론을 이해하고 있고 간단한 퀴리문 작성이 가능합니다. 4개의 프로젝트에서 Mysql을 활용하였습니다."
+    ]
   },
   {
     "title": "Node.js",
     "star": "★★★☆☆",
-    "countProjects": 1,
-    "imgUrl": "static/assets/image/skill_nodejs.png"
+    "countProjects": 2,
+    "imgUrl": "static/assets/image/skill_nodejs.png",
+    "skillDescription": [
+      "express 프레임워크를 활용해서 두 번의 웹 개발을 진행하였습니다.",
+      "npm을 활용해서 많은 모듈을 사용해봤습니다."
+    ]
   },
   {
     "title": "JavaScript",
     "star": "★★★★☆",
     "countProjects": 9,
-    "imgUrl": "static/assets/image/skill_javascript.png"
+    "imgUrl": "static/assets/image/skill_javascript.png",
+    "skillDescription": [
+      "다양한 자바스크립트 라이브러리, 프레임워크를 활용하기 위해서는 코어 문법을 잘 이해하고 있어야 합니다. 그래서 꾸준히 기초 이론을 학습하고 있습니다.",
+      "브라우저 엔진에서 돌아가는 자바스크립트을 다룰 수 있으며 라이브러리를 사용하지 않고 순수 자바스크립트로도 DOM, BOM을 다룰 수 있습니다.",
+      "ES6 문법을 잘 이해하고 있으며 최신 프레임워크를 사용할 때는 ES6를 기반으로 구현하고 있습니다."
+    ]
   },
   {
     "title": "Java",
     "star": "★★★☆☆",
-    "countProjects": 4,
-    "imgUrl": "static/assets/image/skill_java.png"
+    "countProjects": 3,
+    "imgUrl": "static/assets/image/skill_java.png",
+    "skillDescription": [
+      "과거에는 주력 언어였으나 프론트엔드 개발자를 희망하여 최근에는 다루지 않았습니다.",
+      "기본 문법을 잘 이해하고 있으며 JSP를 활용해서 웹 서버 개발, Android로 앱 개발을 하였습니다."
+    ]
   },
   {
-    "title": "Android",
-    "star": "★★★☆☆",
+    "title": "버전 관리 시스템",
+    "star": "★★★★☆",
     "countProjects": 3,
-    "imgUrl": "static/assets/image/skill_android.png"
+    "imgUrl": "static/assets/image/skill_git.png",
+    "skillDescription": [
+      "주로 SourceTree와 VSC에서 제공하는 GUI 환경에서 Git을 활용하였습니다.",
+      "원격 저장소는 Github와 Bitbucket을 사용하였고 Jira와 Bitbucket을 연결하여 이슈 트래킹을 하였습니다."
+    ]
   },
   {
     "title": "React",
     "star": "★★★☆☆",
     "countProjects": 1,
-    "imgUrl": "static/assets/image/skill_react.png"
+    "imgUrl": "static/assets/image/skill_react.png",
+    "skillDescription": ["가상돔, 단 방향 데이터 흐름, props, state, component 기반 설계 등 기본 이론을 이해하고 있으며 프로젝트를 1회 진행하였습니다.",
+      "최근에는 flux 디자인 패턴과 redux를 학습하고 있습니다."
+    ]
   }
 ]

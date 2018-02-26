@@ -2,16 +2,16 @@
   <section ref="main" class="main">
     <div class="main-container">
       <div class="main-left">
-        <h2>
+        <h2 v-observe-visibility="visibleAnimation">
           LEE CHANHO <br>
           I`M A <br>
           Front-End Developer
         </h2>
       </div>
       <div class="main-right">
-        <img class="lamp" src="static/assets/image/image_lamp.png" alt="전등">
-        <img class="starbucks" src="static/assets/image/image_starbucks.png" alt="스타벅스 커피">
-        <img class="macbook" src="static/assets/image/image_macbook.png" alt="맥북 이미지">
+        <img v-observe-visibility="visibleAnimation" class="lamp" src="static/assets/image/image_lamp.png" alt="전등">
+        <img v-observe-visibility="visibleAnimation" class="starbucks" src="static/assets/image/image_starbucks.png" alt="스타벅스 커피">
+        <img v-observe-visibility="visibleAnimation" class="macbook" src="static/assets/image/image_macbook.png" alt="맥북 이미지">
       </div>
       <div class="indicator-container">
         <div class="indicator-arrow top">
@@ -62,35 +62,12 @@ export default {
           }
         }
       });
-
-      // jquery 미사용
-      // let lastScollTop = 0;
-      // let scrollEventState = false;
-      // window.addEventListener("scroll", function(e) {
-      //   if(this.pageYOffset > mainTop && this.pageYOffset < mainBottom){
-      //     if(scrollEventState) return;
-      //     else scrollEventState = true; 
-
-      //     if(this.pageYOffset > lastScollTop){
-      //       // scroll down
-      //       this.scroll({
-      //         top: mainBottom,
-      //         behavior: "smooth"
-      //       });
-      //     }else{
-      //       // scroll up
-      //       this.scroll({
-      //         top: mainTop,
-      //         behavior: "smooth"
-      //       });
-      //     }
-
-      //     lastScollTop = this.pageYOffset;
-      //     setTimeout(function(){
-      //       scrollEventState = false;
-      //     }, 500);
-      //   }
-      // });
+    },
+    visibleAnimation(isVisible, entry) {
+      if(isVisible)
+        entry.target.setAttribute("style", "opacity:1; transform: translateY(0);");
+      else
+        entry.target.setAttribute("style", "opacity:0; transform: translateY(50%);");
     }
   }
 }
