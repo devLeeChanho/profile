@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="app">
-    <app-loading v-if="loadingState"></app-loading>
+    <app-loading v-if="loadingState" v-bind:loading-circle="loadingCircle"></app-loading>
     <global-nav v-on:@onClickMenuList="onClickMenuList"></global-nav>
     <app-main ref="appMain"></app-main>
     <profile-section ref="profileSection"></profile-section>
@@ -32,14 +32,20 @@ export default {
   },
   data() {
     return {
-      loadingState: true
+      loadingState: true,
+      loadingCircle: false // 로딩 완료시 전환 효과에 사용되는 원 - true: 전환, false: 전환하기 전
     }
   },
   methods: {
     onChangeLoadingState() {
       setTimeout(() => {
-        this.loadingState = false;
-        this.goScrollTop();
+        this.loadingCircle = true;
+        this.goScrollProfile(); // 메인 섹션 애니메이션을 위해 프로필 섹션으로 임시 이동
+
+        setTimeout(() => {
+          this.loadingState = false;
+          this.goScrollTop();
+        }, 300);
       }, 3500);
     },
     onClickMenuList(list) {
@@ -61,6 +67,9 @@ export default {
     },
     goScrollTop() {
       window.scroll({top: 0});
+    },
+    goScrollProfile(){
+        this.$refs.profileSection.$el.scrollIntoView();      
     }
   },
   created() {   

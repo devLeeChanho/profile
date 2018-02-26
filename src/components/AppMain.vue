@@ -64,10 +64,12 @@ export default {
       });
     },
     visibleAnimation(isVisible, entry) {
-      if(isVisible)
+      if(isVisible){
         entry.target.setAttribute("style", "opacity:1; transform: translateY(0);");
-      else
-        entry.target.setAttribute("style", "opacity:0; transform: translateY(50%);");
+      }
+      else{
+        entry.target.setAttribute("style", "opacity:0; transform: translateY(-50%);");
+      }
     }
   }
 }

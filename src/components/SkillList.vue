@@ -23,7 +23,7 @@
         if(isVisible)
           entry.target.setAttribute("style", "opacity:1; transform: translateY(0);");
         else
-          entry.target.setAttribute("style", "opacity:0; transform: translateY(100%);");
+          entry.target.setAttribute("style", "opacity:0; transform: translateY(50%);");
       }
     }
   }

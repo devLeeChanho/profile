@@ -17,11 +17,13 @@
         </span>
       </div>
     </div>
+    <div v-bind:class="['loading-circle', {'circle-active': loadingCircle}]"></div>
   </section>
 </template>
 
 <script>
 export default {
+  props: ["loadingCircle"],
   data() {
     return {
       browserSupport: true // 지원하는 브라우저 버전인지 체크

@@ -109,6 +109,26 @@ html, body{
 i.support{
   background-color: #41B883 !important;  
 }
+.loading .loading-circle{
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  left: 50%;
+  top: 55%;
+  -webkit-transform: translate(-50%, -55%);
+  -ms-transform: translate(-50%, -55%);
+  transform: translate(-50%, -55%);
+  background-color: #E6EFF2;
+  z-index: 2;
+  -webkit-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  transition: all 0.7s;
+}
+.loading .loading-circle.circle-active{
+  width: 2500px;
+  height: 2500px;
+}
 
 
 /*
@@ -245,9 +265,9 @@ i.support{
   font-family: Amatic SC, NanumBarunGothic, sans-serif;
   font-size: 3.8rem;
   font-weight: bold;
-  -webkit-transition: all 1.5s;
-  -o-transition: all 1.5s;
-  transition: all 1.5s;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 .main-container .main-right{
   position: relative;
@@ -258,9 +278,9 @@ i.support{
 }
 .main-container .main-right > img{
   position: absolute;
-  -webkit-transition: all 1.5s;
-  -o-transition: all 1.5s;
-  transition: all 1.5s;  
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;  
 }
 .main-container .main-right .lamp{
   height: 420px;
@@ -363,9 +383,9 @@ i.support{
   background-repeat: no-repeat;
   background-position: 100% 80%;
   background-size: 13%;
-  -webkit-transition: all 1.5s;
-  -o-transition: all 1.5s;
-  transition: all 1.5s;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 .profile .profile-container{
   position: relative;
@@ -380,9 +400,9 @@ i.support{
   background-color: #FD4788;
   padding: 11% 0% 5% 3%;
   margin: 0;
-  -webkit-transition: all 1.5s;
-  -o-transition: all 1.5s;
-  transition: all 1.5s;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 .profile .profile-container > h2 > span {
   color: white;
@@ -422,9 +442,9 @@ i.support{
   width: 78%; /* profile h2의 width + padding 값을 100%에서 뺀 값  */
   background-color: white;
   margin-top: 10%;
-  -webkit-transition: all 1.5s;
-  -o-transition: all 1.5s;
-  transition: all 1.5s;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 .profile .profile-container .profile-content ul{
   padding: 5% 0% 5% 5%;
@@ -502,9 +522,9 @@ i.support{
   background-color: #FED102;
   padding: 11% 0% 5% 3%;
   margin: 0 0 -2px 0;
-  -webkit-transition: all 1.5s;
-  -o-transition: all 1.5s;
-  transition: all 1.5s;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 .skillset .skillset-container > h2 > span {
   color: white;
@@ -522,16 +542,17 @@ i.support{
   width: 18%;
   height: 216px;
   padding-left: 2%;
-  -webkit-transition: all 1.5s;
-  -o-transition: all 1.5s;
-  transition: all 1.5s;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 .list-item-1 > .item-title{ color: #485D83; margin-bottom: 0; font-size: 1.2rem; margin: 5% 0 0 0;}
 .list-item-1 > .item-count-project{font-size: 0.8rem; font-weight: lighter; margin: 3px 0 10px; }
 .list-item-1 > .item-star{color:#0F87D8; }
 .list-item-1 > img{ width: 38%; position: absolute; right: 17%; }
 .list-item-1 > .skill-detail{
-  position: absolute; 
+  position: absolute;
+  padding-top: 3%;
   width: 100%;
   height: 100%;
   color: transparent;
@@ -556,16 +577,17 @@ i.support{
   width: 25%;
   height: 295px;
   text-align: center;
-  -webkit-transition: all 1.5s;
-  -o-transition: all 1.5s;
-  transition: all 1.5s;  
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;  
 }
 .list-item-4 > .item-title{ color: #485D83; margin-bottom: 0; font-size: 1.2rem;}
 .list-item-4 > .item-count-project{font-size: 0.8rem; font-weight: lighter; margin: 3px 0 10px; }
 .list-item-4 > .item-star{color:#0F87D8; margin-bottom: 8%;}
 .list-item-4 > img{ width: 40%; }
 .list-item-4 > .skill-detail{
-  position: absolute; 
+  position: absolute;
+  padding-top: 3%;
   width: 100%; 
   height: 100%; 
   color: transparent; 
@@ -617,15 +639,15 @@ i.support{
   background-color: #87C66A;
   padding: 9.5% 0% 3.5% 3%;
   margin: 0;
-
+  
   -webkit-transition: opacity 1.5s, -webkit-transform 1.5s;
-
+  
   transition: opacity 1.5s, -webkit-transform 1.5s;
-
+  
   -o-transition: opacity 1.5s, transform 1.5s;
-
+  
   transition: opacity 1.5s, transform 1.5s;
-
+  
   transition: opacity 1.5s, transform 1.5s, -webkit-transform 1.5s
 }
 .project-container > h2 > span {
@@ -639,15 +661,15 @@ i.support{
   -webkit-transition: border 250ms ease;
   -o-transition: border 250ms ease;
   transition: border 250ms ease;
-
+  
   -webkit-transition: opacity 1.5s, -webkit-transform 1.5s;
-
+  
   transition: opacity 1.5s, -webkit-transform 1.5s;
-
+  
   -o-transition: opacity 1.5s, transform 1.5s;
-
+  
   transition: opacity 1.5s, transform 1.5s;
-
+  
   transition: opacity 1.5s, transform 1.5s, -webkit-transform 1.5s;
 }
 .project-content-tap {

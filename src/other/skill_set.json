@@ -38,12 +38,13 @@
     ]
   },
   {
-    "title": "MySQL",
-    "star": "★★☆☆☆",
-    "countProjects": 4,
-    "imgUrl": "static/assets/image/skill_mysql.png",
+    "title": "React",
+    "star": "★★★☆☆",
+    "countProjects": 1,
+    "imgUrl": "static/assets/image/skill_react.png",
     "skillDescription": [
-      "기본 이론을 이해하고 있고 간단한 퀴리문 작성이 가능합니다. 4개의 프로젝트에서 Mysql을 활용하였습니다."
+      "가상돔, 단 방향 데이터 흐름, props, state, component 기반 설계등 기본 문법을 이해하고 있으며 프로젝트를 1회 진행하였습니다.",
+      "최근에는 flux 디자인 패턴과 redux를 학습하고 있습니다."
     ]
   },
   {
@@ -62,7 +63,7 @@
     "countProjects": 9,
     "imgUrl": "static/assets/image/skill_javascript.png",
     "skillDescription": [
-      "다양한 자바스크립트 라이브러리, 프레임워크를 활용하기 위해서는 코어 문법을 잘 이해하고 있어야 합니다. 그래서 꾸준히 기초 이론을 학습하고 있습니다.",
+      "다양한 자바스크립트 라이브러리, 프레임워크를 활용하기 위해 코어, 고급 문법을 꾸준히 공부하고 있으며 잘 이해하고 있습니다.",
       "브라우저 엔진에서 돌아가는 자바스크립트을 다룰 수 있으며 라이브러리를 사용하지 않고 순수 자바스크립트로도 DOM, BOM을 다룰 수 있습니다.",
       "ES6 문법을 잘 이해하고 있으며 최신 프레임워크를 사용할 때는 ES6를 기반으로 구현하고 있습니다."
     ]
@@ -78,6 +79,15 @@
     ]
   },
   {
+    "title": "MySQL",
+    "star": "★★☆☆☆",
+    "countProjects": 4,
+    "imgUrl": "static/assets/image/skill_mysql.png",
+    "skillDescription": [
+      "기본 이론을 이해하고 있고 간단한 퀴리문 작성이 가능합니다. 4개의 프로젝트에서 Mysql을 활용하였습니다."
+    ]
+  },
+  {
     "title": "버전 관리 시스템",
     "star": "★★★★☆",
     "countProjects": 3,
@@ -86,14 +96,5 @@
       "주로 SourceTree와 VSC에서 제공하는 GUI 환경에서 Git을 활용하였습니다.",
       "원격 저장소는 Github와 Bitbucket을 사용하였고 Jira와 Bitbucket을 연결하여 이슈 트래킹을 하였습니다."
     ]
-  },
-  {
-    "title": "React",
-    "star": "★★★☆☆",
-    "countProjects": 1,
-    "imgUrl": "static/assets/image/skill_react.png",
-    "skillDescription": ["가상돔, 단 방향 데이터 흐름, props, state, component 기반 설계 등 기본 이론을 이해하고 있으며 프로젝트를 1회 진행하였습니다.",
-      "최근에는 flux 디자인 패턴과 redux를 학습하고 있습니다."
-    ]
-  }
+  } 
 ]
