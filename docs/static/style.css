@@ -55,9 +55,14 @@ html, body{
   transform: translate(-50%, -55%);
   text-align: center;
 }
+@media screen and (max-width: 600px){
+  .loading .loading-container{
+    width: 70%;
+  }
+}
 .loading .loading-container > img{
   position: relative;
-  width: 40%;
+  width: 30%;
   animation: vueAnimation 1.5s infinite;
   -webkit-animation: vueAnimation 1.5s infinite;
 }
@@ -89,6 +94,14 @@ html, body{
   color: rgb(34, 34, 255);
   font-weight: normal;
   font-size: 0.85rem;
+}
+@media screen and (max-width: 600px){
+  .loading .loading-notice{
+    font-size: 0.9rem;
+  }
+  .loading .user-info{
+    font-size: 0.8rem;
+  }  
 }
 .loading .browser-check, .loading .resulution-check{
   display: inline-block;
@@ -185,6 +198,19 @@ i.support{
   display: inline-block;
   font-size: 0.9rem;
 }
+@media screen and (max-width: 830px){
+  .gnb-container .left-gnb .menu-icon{
+    width: 20px;
+    height: 20px;
+  }
+  .gnb-container .left-gnb .section-title{
+    padding: 7.8px;
+    width: 70px;
+  }
+  .gnb-container .left-gnb .section-title > li{
+    font-size: 0.8rem;
+  }
+}
 .gnb-container .left-gnb-hide{
   position: absolute;
   top: 125%;
@@ -192,6 +218,11 @@ i.support{
   padding: 10px 33px; 
   background-color: #4B5E6A;
   color: white;
+}
+@media screen and (max-width: 830px){
+  .gnb-container .left-gnb-hide{
+    padding: 5px 27px;
+  }
 }
 .gnb-hide-enter-active, .gnb-hide-leave-active {
   -webkit-transition: opacity .3s;
@@ -216,6 +247,12 @@ i.support{
   margin: 15px 0;
   cursor: pointer;
 }
+@media screen and (max-width: 830px){
+  .gnb-container .left-gnb-hide > li{
+    margin: 12px 0;
+    font-size: 0.9rem;
+  }
+}
 .gnb-container .right-gnb{
   position: absolute;
   right: 0;
@@ -227,6 +264,11 @@ i.support{
 }
 .gnb-container .right-gnb li img{
   width: 30px;
+}
+@media screen and (max-width: 830px){
+  .gnb-container .right-gnb li img{
+    width: 28px;
+  }
 }
 /*
 * AppMain vue
@@ -255,6 +297,13 @@ i.support{
   height: 100%;
   vertical-align: top;
 }
+@media screen and (max-width: 930px){
+  .main-container .main-left{
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+}
 .main-container .main-left > h2{
   position: relative;
   margin: 0;
@@ -269,12 +318,64 @@ i.support{
   -o-transition: all 1s;
   transition: all 1s;
 }
+@media screen and (max-width: 1100px){
+  .main-container .main-left > h2{
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 930px){
+  .main-container .main-left > h2{
+    top: 50%;
+    font-size: 3.3rem;
+  }
+}
+@media screen and (max-width: 830px){
+  .main-container .main-left > h2{
+    top: 45%;
+    font-size: 3.1rem;
+  }
+}
+@media screen and (max-width: 660px){
+  .main-container .main-left > h2{
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px){
+  .main-container .main-left > h2{
+    top: 35%;
+    font-size: 2.7rem;
+  }
+}
 .main-container .main-right{
   position: relative;
   display: inline-block;
   width: 39%;
   height: 100%;
   vertical-align: top;
+}
+@media screen and (max-width: 930px){
+  .main-container .main-right{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45%;
+    display: block;
+  }
+}
+@media screen and (max-width: 830px){
+  .main-container .main-right{
+    width: 53%;
+  }
+}
+@media screen and (max-width: 660px){
+  .main-container .main-right{
+    width: 75%;
+  }
+}
+@media screen and (max-width: 360px){
+  .main-container .main-right{
+    width: 87%;
+  }
 }
 .main-container .main-right > img{
   position: absolute;
@@ -297,6 +398,58 @@ i.support{
   z-index: 1;
   left: 20px;
 }
+@media screen and (max-width:1100px){
+  .main-container .main-right .lamp{
+    height: 360px;
+  }
+  .main-container .main-right .starbucks{
+    top: 350px;
+    left: -50px;
+    width: 55px;
+  }
+  .main-container .main-right .macbook{
+    width: 330px;
+    top: 280px;
+    left: 30px;
+  }
+}
+@media screen and (max-width: 830px){
+  .main-container .main-right .lamp{
+    height: 300px;
+  }
+  .main-container .main-right .starbucks{
+    top: 305px;
+    width: 50px;
+  }
+  .main-container .main-right .macbook{
+    width: 300px;
+    top: 245px;
+  }
+}
+@media screen and (max-width: 660px){
+  .main-container .main-right .starbucks{
+    top: 275px;
+    width: 50px;
+  }
+  .main-container .main-right .macbook{
+    width: 260px;
+    top: 240px;
+  }
+}
+@media screen and (max-width: 480px){
+  .main-container .main-right .lamp{
+    height: 250px;
+  }
+  .main-container .main-right .starbucks{
+    top: 240px;
+    width: 40px;
+    left: -30px;
+  }
+  .main-container .main-right .macbook{
+    width: 220px;
+    top: 200px;
+  }
+}
 .main-container .indicator-container {
   position: absolute;
   left: 50%;
@@ -318,6 +471,9 @@ i.support{
   0 4px 8px 0 rgba(0, 0, 0, 0.2), 
   0 6px 20px 0 rgba(0, 0, 0, 0.2),
   inset 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  transition: all 1.5s;
 }
 .main-container .indicator-arrow {
   margin-top: 50%;  
@@ -334,7 +490,6 @@ i.support{
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  
 }
 .main-container .indicator-arrow .base {
   margin: 0 auto;
@@ -371,7 +526,23 @@ i.support{
   from {margin-top: -100%;}
   to {margin-top: 40%;}
 }
-
+@media screen and (max-width: 930px){
+  .main-container .indicator-container{
+    width: 3em;
+    height: calc(3em * 1.75);
+    border: calc(3em * 0.1) solid #4A5E6B;
+    border-radius: 3em;
+    bottom: -60px;
+  }
+  .main-container .indicator-arrow .base{
+    width: calc(3em * 0.1);
+    height: calc(3em * 0.33);
+    border-radius: calc(3em * 0.1);
+  }
+  .main-container .indicator-arrow .arrowpoint{
+    border-width: calc(3em * 0.175) calc(3em * 0.175) 0 calc(3em * 0.175);
+  }
+}
 
 /*
 * ProfileSection vue
@@ -393,6 +564,11 @@ i.support{
   max-width: 1200px;
   margin: 1px auto 0;
 }
+@media screen and (max-width: 1100px){
+  .profile .profile-container{
+    width: 100%;
+  }
+}
 .profile .profile-container > h2 {
   position: relative;
   float: left;
@@ -409,33 +585,18 @@ i.support{
   font-size: 2rem;
   font-weight: normal;
 }
-/* .profile .profile-container .profile-aside{
-  position: absolute;
-  width: 22%;
-  height: 306px;
-  left: 0;
-  bottom: 0;
+@media screen and (max-width: 950px){
+  .profile .profile-container > h2{
+    float: none;
+    width: 100%;
+    padding: 10px 0;
+    margin: 25px 0;
+    text-align: center;
+  }
+  .profile .profile-container > h2 > span{
+    font-size: 1.7rem;
+  }
 }
-.profile-aside > img{
-  -webkit-box-shadow: -2px 2px 3px black;
-  box-shadow: -2px 2px 3px black;
-}
-.profile-aside .identification-picture{
-  position: absolute;
-  width: 45%;
-  right: 0;
-  top: 0;
-}
-.profile-aside .contest-image{
-  position: absolute;
-  width: 70%;
-  left: 5%;
-  bottom: 5%;
-  -webkit-transform: rotate(-10deg);
-  -ms-transform: rotate(-10deg);
-  transform: rotate(-10deg);
-} */
-
 .profile .profile-container .profile-content {
   position: relative;
   float: left;
@@ -446,8 +607,19 @@ i.support{
   -o-transition: all 1s;
   transition: all 1s;
 }
+@media screen and (max-width: 950px){
+  .profile .profile-container .profile-content{
+    width: 100%;
+    margin-top: 0;  
+  }
+}
 .profile .profile-container .profile-content ul{
   padding: 5% 0% 5% 5%;
+}
+@media screen and (max-width: 950px){
+  .profile .profile-container .profile-content ul{
+    padding: 1% 0% 3% 3%;
+  }
 }
 .profile .profile-container .profile-content ul li{
   position: relative;
@@ -455,17 +627,37 @@ i.support{
   width: 49%;
   vertical-align: middle;
 }
+@media screen and (max-width:545px){
+  .profile .profile-container .profile-content ul li{
+    width: 100%;
+  }
+}
 .profile .profile-container .profile-content ul li > h3{
   margin-bottom: -3px;
   font-weight: normal;
   font-size: 1.2rem;
   color: #485D83;
 }
+@media screen and (max-width: 950px){
+  .profile .profile-container .profile-content ul li > h3{
+    font-size: 1rem;
+  }
+}
 .profile .profile-container .profile-content ul li > p{
   line-height: 1.3rem;
   color: #646464;
   font-weight: 100;
   font-size: 0.85rem;
+}
+@media screen and (max-width: 950px){
+  .profile .profile-container .profile-content ul li > p{  
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 350px){
+  .profile .profile-container .profile-content ul li > p{
+    font-size: 0.74rem;
+  }
 }
 
 
@@ -488,6 +680,11 @@ i.support{
   background-size: contain;
   -webkit-animation: reactRotate 3s linear infinite;
   animation: reactRotate 3s linear infinite;
+}
+@media screen and (max-width: 950px){
+  .skillset:before{
+    width: 100px;
+  }
 }
 @-webkit-keyframes reactRotate{
   from {
@@ -515,6 +712,11 @@ i.support{
   max-width: 1200px;
   margin: 0 auto;
 }
+@media screen and (max-width: 1100px){
+  .skillset .skillset-container{
+    width: 100%;
+  }
+}
 .skillset .skillset-container > h2 {
   position: relative;
   float: right;
@@ -531,12 +733,36 @@ i.support{
   font-size: 2rem;
   font-weight: normal;
 }
+@media screen and (max-width: 950px){
+  .skillset .skillset-container > h2{
+    float: none;
+    width: 100%;
+    padding: 10px 0;
+    margin: 25px 0;
+    text-align: center;
+  }
+  .skillset .skillset-container > h2 > span{
+    font-size: 1.7rem;
+  }
+}
+@media screen and (max-width: 950px){
+  .skillset .skillset-container .skill-list{
+    text-align: center;
+  }
+}
 .skillset .skillset-container .skill-list > li{
   position: relative;  
   background-color: white;
   float: right;
   margin: 2px;
   color: #646464;
+}
+@media screen and (max-width: 950px){
+  .skillset .skillset-container .skill-list > li{
+    float: none;
+    display: inline-block;
+    margin: 1.5%;
+  }
 }
 .skillset .skillset-container .skill-list > .list-item-1{
   width: 18%;
@@ -547,9 +773,27 @@ i.support{
   transition: all 1s;
 }
 .list-item-1 > .item-title{ color: #485D83; margin-bottom: 0; font-size: 1.2rem; margin: 5% 0 0 0;}
+@media screen and (max-width: 950px){
+  .list-item-1 > .item-title{
+    margin-top: 25px;
+  }
+}
 .list-item-1 > .item-count-project{font-size: 0.8rem; font-weight: lighter; margin: 3px 0 10px; }
 .list-item-1 > .item-star{color:#0F87D8; }
+@media screen and (max-width:950px){
+  .list-item-1 > .item-star{
+    margin-bottom: 8%;
+  }
+}
 .list-item-1 > img{ width: 38%; position: absolute; right: 17%; }
+@media screen and (max-width:950px){
+  .list-item-1 > img{
+    position: relative;    
+    width: 36%;
+    right: 0;
+    vertical-align: top;
+  }
+}
 .list-item-1 > .skill-detail{
   position: absolute;
   padding-top: 3%;
@@ -571,6 +815,12 @@ i.support{
   padding: 3%;
   font-size: 0.85rem;
   text-align: left;
+  line-height: 1.3;
+}
+@media screen and (max-width: 1100px){
+  .list-item-1 > .skill-detail > p{
+    font-size: 0.8rem;
+  }
 }
 
 .skillset .skillset-container .skill-list > .list-item-4{
@@ -579,12 +829,13 @@ i.support{
   text-align: center;
   -webkit-transition: all 1s;
   -o-transition: all 1s;
-  transition: all 1s;  
+  transition: all 1s;
+  vertical-align: top;
 }
 .list-item-4 > .item-title{ color: #485D83; margin-bottom: 0; font-size: 1.2rem;}
 .list-item-4 > .item-count-project{font-size: 0.8rem; font-weight: lighter; margin: 3px 0 10px; }
-.list-item-4 > .item-star{color:#0F87D8; margin-bottom: 8%;}
-.list-item-4 > img{ width: 40%; }
+.list-item-4 > .item-star{color:#0F87D8; margin-bottom: 7%;}
+.list-item-4 > img{ width: 36%; }
 .list-item-4 > .skill-detail{
   position: absolute;
   padding-top: 3%;
@@ -606,17 +857,33 @@ i.support{
   padding: 3%;
   font-size: 0.9rem;
   text-align: left;
+  line-height: 1.3;
 }
-
+@media screen and (max-width: 1100px){
+  .list-item-4 > .skill-detail > p{
+    font-size: 0.8rem;    
+  }
+}
 @media screen and (max-width: 1350px){
   .skillset .skillset-container .skill-list > .list-item-1{
-    height: 17.6vw !important;
+    height: 18vw !important;
   }
   .skillset .skillset-container .skill-list > .list-item-4{
-    height: 22.2vw !important; 
+    height: 23vw !important; 
   }
 }
-
+@media screen and (max-width: 950px){
+  .skillset .skillset-container .skill-list > .list-item-1{
+    padding: 0;
+    text-align: center;
+    width: 230px;
+    height: 230px !important;
+  }
+  .skillset .skillset-container .skill-list > .list-item-4{
+    width: 230px;
+    height: 230px !important;
+  }
+}
 
 /*
 * ProjectStudent vue
@@ -632,6 +899,11 @@ i.support{
   width: 90%;
   max-width: 1200px;
 }
+@media screen and (max-width: 1110px){
+  .project .project-container{
+    width: 100%;
+  }
+}
 .project-container > h2{
   position: relative;
   float: left;
@@ -639,15 +911,10 @@ i.support{
   background-color: #87C66A;
   padding: 9.5% 0% 3.5% 3%;
   margin: 0;
-
   -webkit-transition: opacity 1.5s, -webkit-transform 1.5s;
-
   transition: opacity 1.5s, -webkit-transform 1.5s;
-
   -o-transition: opacity 1.5s, transform 1.5s;
-
   transition: opacity 1.5s, transform 1.5s;
-
   transition: opacity 1.5s, transform 1.5s, -webkit-transform 1.5s
 }
 .project-container > h2 > span {
@@ -655,21 +922,33 @@ i.support{
   font-size: 2rem;
   font-weight: normal;
 }
+@media screen and (max-width: 950px){
+  .project-container > h2{
+    float: none;
+    width: 100%;
+    padding: 10px 0;
+    margin: 25px 0;
+    text-align: center;
+  }
+  .project-container > h2 > span {
+    font-size: 1.7rem;
+  }
+}
 .project-container .project-content{
   width: 78.5%;
   margin: -35.9px 0 0 22%;
   -webkit-transition: border 250ms ease;
   -o-transition: border 250ms ease;
   transition: border 250ms ease;
-
+  
   -webkit-transition: opacity 1.5s, -webkit-transform 1.5s;
-
+  
   transition: opacity 1.5s, -webkit-transform 1.5s;
-
+  
   -o-transition: opacity 1.5s, transform 1.5s;
-
+  
   transition: opacity 1.5s, transform 1.5s;
-
+  
   transition: opacity 1.5s, transform 1.5s, -webkit-transform 1.5s;
 }
 .project-content-tap {
@@ -778,7 +1057,7 @@ i.support{
 }
 .project-content .project-detail-wrap{
   position: relative;
-  width: 97%;
+  width: 95.5%;
   padding: 3% 0 5% 3%;
   border: 2px solid #89B973;
   background-color: #FFFFFF; 
