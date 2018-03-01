@@ -13,15 +13,15 @@
         <img v-observe-visibility="visibleAnimation" class="starbucks" src="static/assets/image/image_starbucks.png" alt="스타벅스 커피">
         <img v-observe-visibility="visibleAnimation" class="macbook" src="static/assets/image/image_macbook.png" alt="맥북 이미지">
       </div>
-      <div class="indicator-container">
-        <div class="indicator-arrow top">
-          <div class="base"></div>
-          <div class="arrowpoint"></div>
-        </div>
-        <div class="indicator-arrow bottom">
-          <div class="base"></div>
-          <div class="arrowpoint"></div>
-        </div>
+    </div>
+    <div class="indicator-container">
+      <div class="indicator-arrow top">
+        <div class="base"></div>
+        <div class="arrowpoint"></div>
+      </div>
+      <div class="indicator-arrow bottom">
+        <div class="base"></div>
+        <div class="arrowpoint"></div>
       </div>
     </div>
   </section>
