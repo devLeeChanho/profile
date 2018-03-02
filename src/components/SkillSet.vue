@@ -2,7 +2,7 @@
   <section class=skillset>
     <div class="skillset-container">
       <h2 v-observe-visibility="visibleAnimation">
-        <span>Skill Set</span>
+        <span>SKILL SET</span>
       </h2>
       <div style="clear:both"></div>
       <skill-list v-bind:skills="skills"></skill-list>

@@ -2,7 +2,7 @@
   <section class="profile" v-observe-visibility="backgroundAnimation">
     <div class="profile-container">
       <h2 v-observe-visibility="visibleAnimation">
-        <span>Profile</span>
+        <span>PROFILE</span>
       </h2>
       <div class="profile-content" v-observe-visibility="visibleAnimation">
         <ul>

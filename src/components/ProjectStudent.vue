@@ -3,8 +3,8 @@
     <div class="project-container" v-observe-visibility="visibleAnimation">
       <h2 v-observe-visibility="visibleAnimation">
         <span>
-          Student <br>
-          Project  
+          STUDENT <br>
+          PROJECT  
         </span>
       </h2>
       <div style="clear: both;"></div>
@@ -53,18 +53,16 @@ import ProjectDetail from "./ProjectDetail.vue";
           this.nextPreview();
       },
       prevPreview() {
-        if(this.selectedPreviewIndex === 0){
+        if(this.selectedPreviewIndex === 0)
           this.selectedPreviewIndex = this.selectedProject.preview.image.length-1;
-        }else{
+        else
           this.selectedPreviewIndex--;
-        }
       },
       nextPreview() {
-        if(this.selectedPreviewIndex === this.selectedProject.preview.image.length-1){
+        if(this.selectedPreviewIndex === this.selectedProject.preview.image.length-1)
           this.selectedPreviewIndex = 0;
-        }else{
+        else
           this.selectedPreviewIndex++;
-        }
       },
       setSelectedProject(project) {
         this.selectedProject = project;        

@@ -49,18 +49,17 @@
     <!-- 프로젝트 미리보기 -->
     <div class="project-preview">
       <div class="preview-video" 
-      v-if="selectedProject.preview.video.length"
-      v-for="(videoUrl, index) in selectedProject.preview.video"
-      v-bind:key="index">
-      <video v-bind:src="videoUrl" controls>지원하지 않는 브라우저입니다.</video>              
-    </div>
+        v-if="selectedProject.preview.video.length"
+        v-for="(videoUrl, index) in selectedProject.preview.video"
+        v-bind:key="index">
+        <video v-bind:src="videoUrl" controls>지원하지 않는 브라우저입니다.</video>              
+      </div>
     
-    <div class="preview-image-wrap" v-if="selectedProject.preview.image.length" >
+    <div v-if="selectedProject.preview.image.length" v-bind:class="['preview-image-wrap', {'horizontal-wrap': selectedProject.orientation === 'horizontal'}]">
       <img src="static/assets/image/image_preview.png" 
       v-on:click="onClickArrow('prev')" 
-      class="preview-prev-arrow"
-      v-bind:class="{'prev-arrow-horizontal': selectedProject.orientation === 'horizontal'}">                         
-      <transition-group name="preview" tag="ul" class="preview-image" v-bind:class="{'preview-image-horizontal': selectedProject.orientation === 'horizontal'}">
+      class="preview-prev-arrow">                         
+      <transition-group name="preview" tag="ul" class="preview-image">
         <li 
         v-show="index === selectedPreviewIndex"
         v-for="(imgUrl, index) in selectedProject.preview.image" 
@@ -70,8 +69,7 @@
     </transition-group>
     <img src="static/assets/image/image_preview.png" 
     v-on:click="onClickArrow('next')" 
-    class="preview-next-arrow"
-    v-bind:class="{'next-arrow-horizontal': selectedProject.orientation === 'horizontal'}">       
+    class="preview-next-arrow">
   </div>
 </div>
 </article>
