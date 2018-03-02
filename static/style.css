@@ -598,7 +598,7 @@ i.support{
 }
 .profile .profile-container > h2 > span {
   color: white;
-  font-size: 3.8rem;
+  font-size: 3.5rem;
   font-weight: normal;
   font-family: "Amatic SC", sans-serif;  
 }
@@ -613,7 +613,7 @@ i.support{
   }
   .profile .profile-container > h2 > span{
     color: #485D83;
-    font-size: 3.5rem;
+    font-size: 3.3rem;
   }
 }
 .profile .profile-container .profile-content {
@@ -745,19 +745,28 @@ i.support{
 .skillset .skillset-container > h2 {
   position: relative;
   float: right;
-  width: 19%;
+  width: 20%;
   background-color: #FED102;
-  padding: 10% 0% 4% 3%;
+  padding: 9% 0% 3% 3%;
   margin: 0 0 -2px 0;
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
 }
-.skillset .skillset-container > h2 > span {
+.skillset .skillset-container > h2 > .skillset-title {
   color: white;
-  font-size: 3.8rem;
+  font-size: 3.5rem;
   font-weight: normal;
   font-family: "Amatic SC", sans-serif;
+}
+.skillset .skillset-container > h2 > .skillset-notice {
+  position: relative;
+  margin: 5px 0 0 0;
+  padding: 0;
+  font-family: NanumBarunGothic, sans-serif;
+  font-size: 0.75rem;
+  color: white;
+  font-weight: lighter;
 }
 @media screen and (max-width: 950px){
   .skillset .skillset-container > h2{
@@ -768,9 +777,12 @@ i.support{
     text-align: center;
     background-color: transparent;
   }
-  .skillset .skillset-container > h2 > span {
+  .skillset .skillset-container > h2 > .skillset-title {
     color: #485D83;
-    font-size: 3.5rem;
+    font-size: 3.3rem;
+  }
+  .skillset .skillset-container > h2 > .skillset-notice{
+    color: dimgray;
   }
 }
 @media screen and (max-width: 950px){
@@ -999,7 +1011,7 @@ i.support{
   float: left;
   width: 19%;
   background-color: #87C66A;
-  padding: 8% 0% 3% 3%;
+  padding: 7% 0% 2% 3%;
   margin: 0;
   -webkit-transition: opacity 1.5s, -webkit-transform 1.5s;
   transition: opacity 1.5s, -webkit-transform 1.5s;
@@ -1009,7 +1021,7 @@ i.support{
 }
 .project-container > h2 > span {
   color: white;
-  font-size: 3.8rem;
+  font-size: 3.5rem;
   font-weight: normal;
   font-family: "Amatic SC", sans-serif;
 }
@@ -1024,7 +1036,7 @@ i.support{
   }
   .project-container > h2 > span {
     color: #485D83;
-    font-size: 3.5rem;
+    font-size: 3.3rem;
   }  
 }
 .project-container .project-content{
@@ -1194,6 +1206,11 @@ i.support{
 @media screen and (max-width: 730px){
   .project-content .project-detail-wrap{
     padding-top: 50px;
+  }
+}
+@media screen and (max-width: 480px){
+  .project-content .project-detail-wrap{
+    width: 94%;
   }
 }
 .project-detail-wrap .project-detail{

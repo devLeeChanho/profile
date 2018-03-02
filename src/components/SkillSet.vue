@@ -2,7 +2,8 @@
   <section class=skillset>
     <div class="skillset-container">
       <h2 v-observe-visibility="visibleAnimation">
-        <span>SKILL SET</span>
+        <span class="skillset-title">SKILL SET</span>
+        <p class="skillset-notice">스킬 위에 커서를 올리거나 터치하세요.</p>
       </h2>
       <div style="clear:both"></div>
       <skill-list v-bind:skills="skills"></skill-list>
