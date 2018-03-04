@@ -314,7 +314,6 @@ i.support{
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
-  text-shadow: -7px 7px 2px #DABD85;
 }
 @media screen and (max-width: 1100px){
   .main-container .main-left > h2{
