@@ -22,7 +22,7 @@
     "imgUrl": "static/assets/image/skill_css3.png",
     "skillDescription": [
       "각 속성들을 이해하고 있으며 원하는 레이아웃을 자유롭게 구현할 수 있습니다.",
-      "미디어 쿼리를 활용하여 반응형 웹사이트 구현을 할 수 있습니다.",
+      "유동형 레이아웃과 미디어 쿼리를 활용하여 반응형 웹사이트 구현을 할 수 있습니다.",
       "크로스 브라우징에 대한 이해도가 높으며 스윙, 크롬, 사파리, 파폭, 엣지, IE8+를 크로스 브라우징 해본 경험이 있습니다."
     ]
   },
@@ -43,7 +43,7 @@
     "countProjects": 1,
     "imgUrl": "static/assets/image/skill_react.png",
     "skillDescription": [
-      "가상돔, 단 방향 데이터 흐름, props, state, component 기반 설계등 기본 문법을 이해하고 있으며 프로젝트를 1회 진행하였습니다.",
+      "SPA, 가상돔, 단 방향 데이터 흐름, props, state, component 기반 설계등 기본 문법을 이해하고 있으며 프로젝트를 1회 진행하였습니다.",
       "최근에는 flux 디자인 패턴과 redux를 학습하고 있습니다."
     ]
   },

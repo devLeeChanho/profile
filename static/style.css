@@ -314,6 +314,7 @@ i.support{
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
+  text-shadow: -7px 7px 2px #DABD85;
 }
 @media screen and (max-width: 1100px){
   .main-container .main-left > h2{
@@ -764,7 +765,7 @@ i.support{
   margin: 5px 0 0 0;
   padding: 0;
   font-family: NanumBarunGothic, sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.78rem;
   color: white;
   font-weight: lighter;
 }
@@ -919,7 +920,17 @@ i.support{
   text-align: left;
   line-height: 1.3;
 }
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1170px){
+  .list-item-1 > .skill-detail > p{
+    font-size: 0.75rem;
+  }
+}
+@media screen and (max-width: 1000px){
+  .list-item-1 > .skill-detail > p{
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 950px){
   .list-item-1 > .skill-detail > p{
     font-size: 0.8rem;
   }
