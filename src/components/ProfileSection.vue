@@ -19,8 +19,8 @@
             <p>Meokgol, Korea (서울시 중랑구 묵1동)</p>
           </li>
           <li>
-            <h3>LEVEL OF EDUCATION</h3>
-            <p> Korea National University of Transportation<br>Department Of Computer Science<br>(한국교통대학교 컴퓨터정보기술공학부 소프트웨어전공 졸업)</p>
+            <h3>HOBBY</h3>
+            <p>#개발 &nbsp;#<img class="soccer-ball" src="static/assets/image/image_soccerball.jpeg" alt="축구공">&nbsp;#EPL 시청 &nbsp;#배틀그라운드</p>
           </li>
           <li>
             <h3>CERTIFICATE</h3>

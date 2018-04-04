@@ -646,6 +646,10 @@ i.support{
   width: 49%;
   vertical-align: middle;
 }
+.profile .profile-container .profile-content ul li .soccer-ball{
+  width: 25px;
+  vertical-align: middle;
+}
 @media screen and (max-width:545px){
   .profile .profile-container .profile-content ul li{
     width: 100%;
