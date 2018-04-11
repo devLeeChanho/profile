@@ -52,17 +52,17 @@
         // MAIN, PROFILE, SKILLSET, PROJECTS      
         switch (list) {
           case "MAIN":
-          this.$refs.appMain.$el.scrollIntoView({behavior: 'smooth'});
-          break;
+            this.$refs.appMain.$el.scrollIntoView({behavior: 'smooth'});
+            break;
           case "PROFILE":
-          this.$refs.profileSection.$el.scrollIntoView({behavior: 'smooth'});
-          break;
+            this.$refs.profileSection.$el.scrollIntoView({behavior: 'smooth'});
+            break;
           case "SKILLSET":
-          this.$refs.skillSet.$el.scrollIntoView({behavior: 'smooth'});
-          break;
+            this.$refs.skillSet.$el.scrollIntoView({behavior: 'smooth'});
+            break;
           case "PROJECTS":
-          this.$refs.projectStudent.$el.scrollIntoView({behavior: 'smooth'});
-          break;
+            this.$refs.projectStudent.$el.scrollIntoView({behavior: 'smooth'});
+            break;
         }
       },
       goScrollTop() {
