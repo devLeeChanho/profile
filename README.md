@@ -1,7 +1,7 @@
 # profile
 
 > 이찬호 포트폴리오 <br>
-> vue.js 라이브러리로 제작 <br>
+> vue 프레임워크로 제작 <br>
 > https://devleechanho.github.io/profile/#/
 
 
